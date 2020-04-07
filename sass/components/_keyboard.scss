@@ -1,0 +1,42 @@
+.keyboard__keys-holder {
+    margin-top: 20px;
+    padding: 5px 10px 1px 10px;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    @extend %matherial-shadow;
+    background-color: $color-keyboard-bg;
+}
+
+.key {
+    width: 40px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: $color-key;
+    color: $color-key-text;
+    @extend %font-prime;
+    @include font(14px, 14px, 200);
+    &:hover {
+        background-color: $color-hover;
+        transition: 0.6s;
+    }
+    &-active {
+        background-color: $color-active;
+        transform: scale(0.8);
+        transition: 0.1s;
+    }
+}
+
+.key-big {
+    width: 85px;
+}
+
+.key-biggest {
+    width: 310px;
+}
+
+.keyboard__key {
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}

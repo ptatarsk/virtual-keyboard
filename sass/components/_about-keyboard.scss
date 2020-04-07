@@ -1,0 +1,14 @@
+.about-keyboard__wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %matherial-shadow;
+    background-color: $color-about-bg;
+}
+
+.about-keyboard__text {
+    @extend %font-prime;
+    @include font(18px, 18px, 500);
+    color: $color-about-text;
+}
